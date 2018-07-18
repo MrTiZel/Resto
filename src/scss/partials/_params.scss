@@ -1,3 +1,28 @@
+//Шрифты сайта
+//mainFont
+@font-face {
+    font-family: Aleo-Regular;
+    src: url(fonts/aleo-regular.ttf);
+}
+
+@font-face {
+    font-family: Aleo-bold;
+    src: url(fonts/aleo-bold.ttf);
+}
+
+@font-face {
+    font-family: Aleo-lightItalic;
+    src: url(fonts/aleo-light-italic.ttf);
+}
+
+//secondFont 
+@font-face {
+    font-family: WCManoNegraBta;
+    src: url(fonts/wc-mano-negra-bta.ttf);
+}
+
+
+
 //Все цвета макета
 //главный цвет текста
 $mainTextColor: #555555;
@@ -7,6 +32,8 @@ $secondTextColor: #b7b7b7;
 $thirdTextColor: #fff;
 //главный цвет текста
 $logoTextColor: #3a3a3a;
+
+
 
 
 //BG
