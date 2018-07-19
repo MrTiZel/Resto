@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Resto</title>
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
@@ -19,10 +18,10 @@
 </head>
 
 <body>
-    <nav id="mainNav" class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="logo col-lg-4 ">Resto <span>..</span></div>
-            <div class="ulNav col-lg col-12">
+    <nav id="mainNav">
+        <div class="row">
+            <div class="logo col-lg ">Resto <span>..</span></div>
+            <div class="ulNav col-lg">
                 <ul>
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Menu</a></li>
@@ -34,19 +33,33 @@
         </div>
     </nav>
     <header id="mainHeader">
-        <div id="textHeader" class="container">
-            <div class="row align-items-center">
-                <div class="col-lg">
-                    <h1>This Template Is Awesome</h1>
-                    <p>resto restaurant home page website template</p>
-                </div>
+        <div class="row textHeader">
+            <div class="col-lg">
+                <h1>This Template Is Awesome</h1>
+                <p>resto restaurant home page website template</p>
             </div>
         </div>
         <img alt="icon-menu" src="img/menu.png">
     </header>
-    <div id="prices" class="container ">
-        <div class="row justify-content-lg-between">
-            <div class="pricesText col-lg">
+    <div id="prices">
+        <div class="row block">
+            <div class="pricesText col-lg-5">
+                <div>
+                    <p>Voluptate cillum fugiat.<i></i><span>$50</span></p>
+                    <p>Cheese, tomato, mushrooms, onions.</p>
+                </div>
+                <div>
+                    <p>Metus varius laoreet.<i></i><span>$62</span></p>
+                    <p>Chicken, mozzarella cheese, onions.</p>
+                </div>
+                <div>
+                    <p>Donec sodales magna.<i></i><span>$25</span></p>
+                    <p>Tuna, Sweetcorn, Cheese.</p>
+                </div>
+                <div>
+                    <p>Saugue velit cursus.<i></i><span>$30</span></p>
+                    <p>Pineapple, Minced Beef, Cheese.</p>
+                </div>
                 <div>
                     <p>Voluptate cillum fugiat.<i></i><span>$50</span></p>
                     <p>Cheese, tomato, mushrooms, onions.</p>
@@ -64,7 +77,23 @@
                     <p>Pineapple, Minced Beef, Cheese.</p>
                 </div>
             </div>
-            <div class="pricesText col-lg">
+            <div class="pricesText col-lg-5">
+                <div>
+                    <p>Arcu pede enim justo.<i></i><span>$45</span></p>
+                    <p>Tuna, Sweetcorn, Cheese.</p>
+                </div>
+                <div>
+                    <p>Cras dapibussemper nisi.<i></i><span>$32</span></p>
+                    <p>Pineapple, Minced Beef, Cheese.</p>
+                </div>
+                <div>
+                    <p>Quam semper libero.<i></i><span>$15</span></p>
+                    <p>Cheese, tomato, mushrooms, onions.</p>
+                </div>
+                <div>
+                    <p>Nam eget dui Etiam.<i></i><span>$35</span></p>
+                    <p>Chicken, mozzarella cheese, onions.</p>
+                </div>
                 <div>
                     <p>Arcu pede enim justo.<i></i><span>$45</span></p>
                     <p>Tuna, Sweetcorn, Cheese.</p>
@@ -83,126 +112,118 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <button type="button" class="btn btn-outline-secondary">load more | <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+        <div class="row">
+            <button type="button" class="btn-half">load more | <i class="fa fa-angle-down" aria-hidden="true"></i></button>
         </div>
     </div>
     <div id="dishes">
-        <div class="container">
-            <h2>Featured Dishes <i></i></h2>
-            <div class="row justify-content-center">
-                <div class="carouselDishes col-lg col-md-10 col-">
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 4" src="img/Layer 4.jpg">
-                            <p>Fugiat nulla sint<span>$30</span></p>
-                            <span class="star"><i class="star-4"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 5" src="img/Layer 5.jpg">
-                            <p>Daute irure dolor<span>$24</span></p>
-                            <span class="star"><i class="star-3"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 2" src="img/Layer 2.jpg">
-                            <p>Officia deserunt mollit<span>$60</span></p>
-                            <span class="star"><i class="star-5"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 3" src="img/Layer 3.jpg">
-                            <p>Pim minim veniam<span>$17</span></p>
-                            <span class="star"><i class="star-4"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 4" src="img/Layer 4.jpg">
-                            <p>Fugiat nulla sint<span>$30</span></p>
-                            <span class="star"><i class="star-4"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 5" src="img/Layer 5.jpg">
-                            <p>Daute irure dolor<span>$24</span></p>
-                            <span class="star"><i class="star-3"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 2" src="img/Layer 2.jpg">
-                            <p>Officia deserunt mollit<span>$60</span></p>
-                            <span class="star"><i class="star-5"></i></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dishesImg">
-                            <img alt="Layer 3" src="img/Layer 3.jpg">
-                            <p>Pim minim veniam<span>$17</span></p>
-                            <span class="star"><i class="star-4"></i></span>
-                        </div>
-                    </div>
+        <h2>Featured Dishes <i></i></h2>
+        <div class="row carouselDishes">
+            <div class="dishesbox col-lg-4">
+                <div class="dishesImg">
+                    <img alt="Layer 4" src="img/Layer 4.jpg">
+                    <p>Fugiat nulla sint<span>$30</span></p>
+                    <span class="star"><i class="star-4"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg-4">
+                <div class="dishesImg">
+                    <img alt="Layer 5" src="img/Layer 5.jpg">
+                    <p>Daute irure dolor<span>$24</span></p>
+                    <span class="star"><i class="star-3"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg-4">
+                <div class="dishesImg">
+                    <img alt="Layer 2" src="img/Layer 2.jpg">
+                    <p>Officia deserunt mollit<span>$60</span></p>
+                    <span class="star"><i class="star-5"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg-4">
+                <div class="dishesImg">
+                    <img alt="Layer 3" src="img/Layer 3.jpg">
+                    <p>Pim minim veniam<span>$17</span></p>
+                    <span class="star"><i class="star-4"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg">
+                <div class="dishesImg">
+                    <img alt="Layer 4" src="img/Layer 4.jpg">
+                    <p>Fugiat nulla sint<span>$30</span></p>
+                    <span class="star"><i class="star-4"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg">
+                <div class="dishesImg">
+                    <img alt="Layer 5" src="img/Layer 5.jpg">
+                    <p>Daute irure dolor<span>$24</span></p>
+                    <span class="star"><i class="star-3"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg">
+                <div class="dishesImg">
+                    <img alt="Layer 2" src="img/Layer 2.jpg">
+                    <p>Officia deserunt mollit<span>$60</span></p>
+                    <span class="star"><i class="star-5"></i></span>
+                </div>
+            </div>
+            <div class="dishesbox col-lg">
+                <div class="dishesImg">
+                    <img alt="Layer 3" src="img/Layer 3.jpg">
+                    <p>Pim minim veniam<span>$17</span></p>
+                    <span class="star"><i class="star-4"></i></span>
                 </div>
             </div>
         </div>
     </div>
     <div id="gallery">
-        <div class="container">
-            <h2>The Gallery <i></i></h2>
-            <div class="row no-gutters  justify-content-center">
-                <div class="col-xl col-lg-10 col-sm-7 col- justify-content-center">
-                    <a data-fancybox="gallery" href="img/5.jpg"><img src="img/5.jpg"></a>
-                    <a data-fancybox="gallery" href="img/3.jpg"><img src="img/3.jpg"></a>
-                    <a data-fancybox="gallery" href="img/4.jpg"><img src="img/4.jpg"></a>
-                    <a data-fancybox="gallery" href="img/1.jpg"><img src="img/1.jpg"></a>
-                    <a data-fancybox="gallery" href="img/2.jpg"><img src="img/2.jpg"></a>
-                </div>
-
+        <h2>The Gallery <i></i></h2>
+        <div class="imgbox row">
+            <div class="imgbox col-lg">
+                <a data-fancybox="gallery" href="img/5.jpg"><img src="img/5.jpg"></a>
+                <a data-fancybox="gallery" href="img/3.jpg"><img src="img/3.jpg"></a>
+                <a data-fancybox="gallery" href="img/4.jpg"><img src="img/4.jpg"></a>
+                <a data-fancybox="gallery" href="img/1.jpg"><img src="img/1.jpg"></a>
+                <a data-fancybox="gallery" href="img/2.jpg"><img src="img/2.jpg"></a>
             </div>
         </div>
     </div>
     <footer id="mainFooter">
-        <div class="container">
-            <div class="row justify-content-center align-items-end">
-                <div class="col-lg d-flex justify-content-between">
-                    <ul>
-                        <li>New York Restaurant</li>
-                        <li class="lightText">3926 Anmoore Road</li>
-                        <li class="lightText">New York, NY 10014</li>
-                        <li>718-749-1714</li>
-                    </ul>
-
-                    <ul>
-                        <li>France Restaurant</li>
-                        <li class="lightText">68, rue de la Couronne</li>
-                        <li class="lightText">75002 PARIS</li>
-                        <li>02.94.23.69.56</li>
-                    </ul>
-
-                    <ul class="menuFoot ">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul>
-                        <li class="logoFooter">Resto<span>..</span></li>
-                        <li>© All Rights Reserved 2014.</li>
-                        <li>Find More at <a href="#"><b>Pixelhint.com</b></a></li>
-                    </ul>
-                </div>
-
+        <div class="row">
+            <div class="col-lg">
+                <ul>
+                    <li>New York Restaurant</li>
+                    <li class="lightText">3926 Anmoore Road</li>
+                    <li class="lightText">New York, NY 10014</li>
+                    <li>718-749-1714</li>
+                </ul>
+            </div>
+            <div class="col-lg">
+                <ul>
+                    <li>France Restaurant</li>
+                    <li class="lightText">68, rue de la Couronne</li>
+                    <li class="lightText">75002 PARIS</li>
+                    <li>02.94.23.69.56</li>
+                </ul>
+            </div>
+            <div class="col-lg">
+                <ul class="menuFoot ">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg">
+                <ul>
+                    <li class="logoFooter">Resto<span>..</span></li>
+                    <li>© All Rights Reserved 2014.</li>
+                    <li>Find More at <a href="#"><b>Pixelhint.com</b></a></li>
+                </ul>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -235,9 +256,10 @@
             // или "два-в-одном", вместо двух последних строк:
             $(window).on('load resize', windowSize);
 
-
+            $('.btn-half').on('click', function() {
+                $('.block').toggleClass('block-open');
+            });
         });
-
     </script>
 </body>
 
