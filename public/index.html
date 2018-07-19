@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 </head>
 
 <body>
@@ -84,33 +87,61 @@
     <div id="dishes">
         <div class="container">
             <h2>Featured Dishes <i></i></h2>
-            <div class="row justify-content-lg-between">
-                <div class="col-lg-4">
-                    <div>
-                        <img alt="" src="">
+            <div class="stickSlad row justify-content-lg-between">
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 4" src="../img/Layer 4.jpg">
                         <p>Fugiat nulla sint<span>$30</span></p>
-                        <i class="star-4"></i>
+                        <span class="star"><i class="star-4"></i></span>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div>
-                        <img alt="" src="">
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 5" src="../img/Layer 5.jpg">
                         <p>Daute irure dolor<span>$24</span></p>
-                        <i class="star-3"></i>
+                        <span class="star"><i class="star-3"></i></span>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div>
-                        <img alt="" src="">
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 2" src="../img/Layer 2.jpg">
                         <p>Officia deserunt mollit<span>$60</span></p>
-                        <i class="star-5"></i>
+                        <span class="star"><i class="star-5"></i></span>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div>
-                        <img alt="" src="">
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 3" src="../img/Layer 3.jpg">
                         <p>Pim minim veniam<span>$17</span></p>
-                        <i class="star-4"></i>
+                        <span class="star"><i class="star-4"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 4" src="../img/Layer 4.jpg">
+                        <p>Fugiat nulla sint<span>$30</span></p>
+                        <span class="star"><i class="star-4"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 5" src="../img/Layer 5.jpg">
+                        <p>Daute irure dolor<span>$24</span></p>
+                        <span class="star"><i class="star-3"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 2" src="../img/Layer 2.jpg">
+                        <p>Officia deserunt mollit<span>$60</span></p>
+                        <span class="star"><i class="star-5"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="dishesImg">
+                        <img alt="Layer 3" src="../img/Layer 3.jpg">
+                        <p>Pim minim veniam<span>$17</span></p>
+                        <span class="star"><i class="star-4"></i></span>
                     </div>
                 </div>
             </div>
@@ -174,6 +205,34 @@
     </footer>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function windowSize() {
+                if ($(window).width() >= '995') {
+                    $('.stickSlad').slick({
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    });
+                } else {
+                    $('.stickSlad').slick({
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    });
+                }
+            }
+            $(window).load(windowSize); // при загрузке
+            $(window).resize(windowSize); // при изменении размеров
+            // или "два-в-одном", вместо двух последних строк:
+            $(window).on('load resize', windowSize);
+
+        });
+
+    </script>
 </body>
 
 </html>

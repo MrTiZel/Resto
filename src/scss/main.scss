@@ -104,3 +104,35 @@ h3 {
         }
     }
 }
+
+#dishes {
+    h2 {
+        display: flex;
+        align-items: center;
+        font-family: Aleo-Regular;
+        i {
+            display: inline-block;
+            width: 20%;
+            border-bottom: 1px #e5e3e3 solid;
+            position: relative;
+            left: 20px;
+        }
+    }
+    .dishesImg {
+        width: 220px;
+        margin-top: 40px;
+        img {
+            width: 220px;
+            height: 200px;
+        }
+        p {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    }
+
+    @include star;
+
+
+}

@@ -14,3 +14,49 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin star {
+    .star {
+        display: block;
+        background: url("../img/star.png") repeat-x;
+        width: 100px;
+        height: 12px;
+        position: relative;
+        top: -10px;
+    }
+
+    .star-1 {
+        display: block;
+        background: url("../img/star-yes.png") repeat-x;
+        width: 20px;
+        height: 12px;
+    }
+
+    .star-2 {
+        display: block;
+        background: url("../img/star-yes.png") repeat-x;
+        width: 40px;
+        height: 12px;
+    }
+
+    .star-3 {
+        display: block;
+        background: url("../img/star-yes.png") repeat-x;
+        width: 60px;
+        height: 12px;
+    }
+
+    .star-4 {
+        display: block;
+        background: url("../img/star-yes.png") repeat-x;
+        width: 80px;
+        height: 12px;
+    }
+
+    .star-5 {
+        display: block;
+        background: url("../img/star-yes.png") repeat-x;
+        width: 100px;
+        height: 12px;
+    }
+}
