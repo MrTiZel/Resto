@@ -56,7 +56,7 @@ h3 {
     height: 570px;
     color: $thirdTextColor;
     border-bottom: #f34949 5px solid;
-    margin-bottom: 81px;
+    margin-bottom: 120px;
 
     img {
         display: block;
@@ -77,4 +77,30 @@ h3 {
         }
     }
 
+}
+
+#prices {
+
+    button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .pricesText {
+        p:first-child {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+
+            i {
+
+                width: 50%;
+                border-bottom: 1px $secondTextColor solid;
+            }
+        }
+        p:last-child {
+
+            color: $secondTextColor;
+            font-family: Aleo-lightItalic;
+        }
+    }
 }
