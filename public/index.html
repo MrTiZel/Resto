@@ -87,7 +87,7 @@
     <div id="dishes">
         <div class="container">
             <h2>Featured Dishes <i></i></h2>
-            <div class="stickSlad row justify-content-lg-between">
+            <div class="carouselDishes row justify-content-lg-between">
                 <div class="col-lg">
                     <div class="dishesImg">
                         <img alt="Layer 4" src="../img/Layer 4.jpg">
@@ -212,13 +212,13 @@
         $(document).ready(function() {
             function windowSize() {
                 if ($(window).width() >= '995') {
-                    $('.stickSlad').slick({
+                    $('.carouselDishes').slick({
                         infinite: true,
                         slidesToShow: 4,
                         slidesToScroll: 4
                     });
                 } else {
-                    $('.stickSlad').slick({
+                    $('.carouselDishes').slick({
                         infinite: true,
                         slidesToShow: 2,
                         slidesToScroll: 2
