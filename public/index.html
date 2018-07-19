@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+
+
 </head>
 
 <body>
@@ -150,45 +154,41 @@
     <div id="gallery">
         <div class="container">
             <h2>The Gallery <i></i></h2>
-            <div class="row">
-                <div class="col-lg">
-                    <img alt="" src="">
+            <div class="row no-gutters">
+                <div class=" col-lg">
+                    <a data-fancybox="gallery" href="../img/5.jpg"><img src="../img/5.jpg"></a>
                 </div>
                 <div class="col-lg">
-                    <img alt="" src="">
+                    <a data-fancybox="gallery" href="../img/3.jpg"><img src="../img/3.jpg"></a>
+                    <a data-fancybox="gallery" href="../img/4.jpg"><img src="../img/4.jpg"></a>
                 </div>
                 <div class="col-lg">
-                    <img alt="" src="">
-                </div>
-                <div class="col-lg">
-                    <img alt="" src="">
-                </div>
-                <div class="col-lg">
-                    <img alt="" src="">
+                    <a data-fancybox="gallery" href="../img/1.jpg"><img   src="../img/1.jpg"></a>
+                    <a data-fancybox="gallery" href="../img/2.jpg"><img   src="../img/2.jpg"></a>
                 </div>
             </div>
         </div>
     </div>
     <footer id="mainFooter">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between align-items-center">
                 <address class="col-lg">
                 <ul>
                     <li>New York Restaurant</li>
-                    <li>3926 Anmoore Road</li>
-                    <li>New York, NY 10014</li>
+                    <li class="lightText">3926 Anmoore Road</li>
+                    <li class="lightText">New York, NY 10014</li>
                     <li>718-749-1714</li>
                 </ul>
             </address>
                 <address class="col-lg">
                 <ul>
                     <li>France Restaurant</li>
-                    <li>68, rue  de la Couronne</li>
-                    <li>75002 PARIS</li>
+                    <li class="lightText">68, rue  de la Couronne</li>
+                    <li class="lightText">75002 PARIS</li>
                     <li>02.94.23.69.56</li>
                 </ul>
             </address>
-                <ul class="col-lg">
+                <ul class="menuFoot col-lg">
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -198,7 +198,7 @@
                 <div class="col-lg">
                     <p class="logoFooter">Resto<span>..</span></p>
                     <p>© All Rights Reserved 2014.</p>
-                    <p>Find More at <a href="#">Pixelhint.com</a></p>
+                    <p>Find More at <a href="#"><b>Pixelhint.com</b></a></p>
                 </div>
             </div>
         </div>
@@ -206,6 +206,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript">
@@ -229,6 +230,7 @@
             $(window).resize(windowSize); // при изменении размеров
             // или "два-в-одном", вместо двух последних строк:
             $(window).on('load resize', windowSize);
+
 
         });
 

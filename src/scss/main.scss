@@ -107,17 +107,11 @@ h3 {
 
 #dishes {
     h2 {
-        display: flex;
-        align-items: center;
-        font-family: Aleo-Regular;
-        i {
-            display: inline-block;
-            width: 20%;
-            border-bottom: 1px #e5e3e3 solid;
-            position: relative;
-            left: 20px;
-        }
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
+    @include H2Content;
+
     .dishesImg {
         width: 220px;
         margin-top: 40px;
@@ -133,6 +127,62 @@ h3 {
     }
 
     @include star;
+}
 
+#gallery {
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    @include H2Content;
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+
+        .col,
+        [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+#mainFooter {
+    background: $bgFooter;
+    margin-top: 150px;
+    color: $thirdTextColor;
+
+    a {
+        color: $thirdTextColor;
+        text-decoration: none;
+    }
+    p {
+        line-height: 0.6;
+    }
+    .logoFooter {
+        font-family: WCManoNegraBta;
+        font-size: 30px;
+        position: relative;
+        top: -10px;
+
+        span {
+            color: red;
+        }
+    }
+
+    .row {
+        height: 300px;
+
+        ul {
+            line-height: 2;
+            list-style: none;
+
+            .lightText {
+                font-family: Aleo-lightItalic;
+
+            }
+        }
+    }
 
 }
