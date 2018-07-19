@@ -2,23 +2,23 @@
 //mainFont
 @font-face {
     font-family: Aleo-Regular;
-    src: url(fonts/aleo-regular.ttf);
+    src: url(../fonts/aleo-regular.ttf);
 }
 
 @font-face {
     font-family: Aleo-bold;
-    src: url(fonts/aleo-bold.ttf);
+    src: url(../fonts/aleo-bold.ttf);
 }
 
 @font-face {
     font-family: Aleo-lightItalic;
-    src: url(fonts/aleo-light-italic.ttf);
+    src: url(../fonts/aleo-light-italic.ttf);
 }
 
 //secondFont 
 @font-face {
     font-family: WCManoNegraBta;
-    src: url(fonts/wc-mano-negra-bta.ttf);
+    src: url(../fonts/wc-mano-negra-bta.ttf);
 }
 
 
@@ -40,6 +40,6 @@ $logoTextColor: #3a3a3a;
 //главный цвет текста
 $bgBody: #ffffff;
 //главный цвет текста
-$bgHeader: url("img/bgHeader.jpg");
+$bgHeader: url("../img/bgHeader.jpg");
 //главный цвет текста
 $bgFooter: #3b3b3b;

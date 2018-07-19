@@ -1,2 +1,72 @@
 @import "partials/params";
 @import "partials/mixins";
+
+html,
+body {
+    background: $bgBody;
+    height: 100%;
+}
+
+p,
+a,
+li,
+h1,
+h2,
+h3 {
+    font-family: Aleo-Regular, Aleo-lightItalic, Aleo-bold;
+    line-height: 1.7;
+}
+
+#mainNav {
+
+    .row {
+        height: 111px;
+        .logo {
+            color: $mainTextColor;
+            font-family: WCManoNegraBta;
+            font-size: 36px;
+
+            span {
+                color: red;
+                position: relative;
+                left: -10px;
+            }
+        }
+        .ulNav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li {
+                    a {
+                        font-weight: bold;
+                        color: $mainTextColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#mainHeader {
+    background: $bgHeader no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 570px;
+    color: $thirdTextColor;
+
+    .row {
+        height: 570px;
+        text-align: center;
+
+        h1 {
+            font-family: WCManoNegraBta;
+            font-size: 100px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+}

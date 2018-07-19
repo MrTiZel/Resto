@@ -1,0 +1,16 @@
+@mixin MyFlexBetween {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin MyFlexCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin MyFlexBetweenCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
