@@ -55,7 +55,15 @@ h3 {
     background-position: center center;
     height: 570px;
     color: $thirdTextColor;
+    border-bottom: #f34949 5px solid;
+    margin-bottom: 81px;
 
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 155px;
+        height: 75px;
+    }
     .row {
         height: 570px;
         text-align: center;
